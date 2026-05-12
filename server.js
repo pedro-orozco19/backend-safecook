@@ -18,6 +18,10 @@ app.use('/api/inicio', inicioRoutes);
 const bitacoraRoutes = require('./routes/bitacora');
 app.use('/api/bitacora', bitacoraRoutes);
 
+// Rutas de Soporte y Feedback
+const soporteRoutes = require('./routes/soporte');
+app.use('/api/soporte', soporteRoutes);
+
 // Arrancamos el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
