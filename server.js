@@ -22,6 +22,10 @@ app.use('/api/bitacora', bitacoraRoutes);
 const soporteRoutes = require('./routes/soporte');
 app.use('/api/soporte', soporteRoutes);
 
+// Rutas de Detección de Gas
+const deteccionRoutes = require('./routes/deteccion');
+app.use('/api/deteccion', deteccionRoutes);
+
 // Arrancamos el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
